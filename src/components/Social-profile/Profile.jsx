@@ -1,22 +1,17 @@
-import React from 'react' ;
+import React from 'react';
 //import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 
-
-const Profile = ({avatar, name, tag, location, followers, views, likes}) => (
-<div className={styles.profile}>
+const Profile = ({ avatar, name, tag, location, followers, views, likes }) => (
+  <div className={styles.profile}>
     <div className={styles.description}>
-      <img
-        src={avatar}
-        alt="Аватар пользователя"
-        className={styles.avatar}
-      />
+      <img src={avatar} alt="Аватар пользователя" className={styles.avatar} />
       <p className="name">{name}</p>
       <p className="tag">{tag}</p>
       <p className="location">{location}</p>
     </div>
-  
+
     <ul className={styles.stats}>
       <li>
         <span className="label">Followers </span>
@@ -34,7 +29,6 @@ const Profile = ({avatar, name, tag, location, followers, views, likes}) => (
   </div>
 );
 
-
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
@@ -45,5 +39,4 @@ Profile.propTypes = {
   likes: PropTypes.number.isRequired,
 };
 
-export default Profile
-
+export default Profile;

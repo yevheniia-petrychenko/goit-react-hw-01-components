@@ -1,39 +1,38 @@
 .friendList {
-    display: block;
-    margin-left: 30%;
-    margin-bottom: 50px;
-  }
+  display: block;
+  margin-left: 30%;
+  margin-bottom: 50px;
+}
 
-  .name {
-      font-size: 20px;
-      font-weight: 500;
-      margin-left: 20px;
-  }
-  
-  .item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-    padding: 10px;
-    border: 1px solid grey;
-    width: 300px;
-    box-shadow: 0 0 5px rgb(87, 47, 233); 
-  }
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+}
 
-  .span {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .statusOnline {
-    composes: span;
-    background-color: green;
-  }
-  
-  .statusOffline {
-    composes: span;
-    background-color: red;
-  }
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid grey;
+  width: 300px;
+  box-shadow: 0 0 5px rgb(87, 47, 233);
+}
 
+.span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.statusOnline {
+  composes: span;
+  background-color: green;
+}
+
+.statusOffline {
+  composes: span;
+  background-color: red;
+}
